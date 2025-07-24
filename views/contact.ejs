@@ -1,0 +1,12 @@
+<h2>Laissez un message</h2>
+<form method="POST" action="/contact">
+  <textarea name="message"></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+
+<h3>Messages :</h3>
+<ul>
+  <% messages.forEach(function(msg) { %>
+    <li><%= msg %></li>
+  <% }) %>
+</ul>
